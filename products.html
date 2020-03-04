@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html>
+    <head><!--<link rel="stylesheet" href="normalize.css">-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STORE</title>
+        <link href="https://fonts.googleapis.com/css?family=Domine|Questrial" rel="stylesheet">
+        
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Questrial', sans-serif;
+            }
+
+            header {
+                height: 80px;
+                border-bottom: 1px dotted #ccc;
+            }
+
+            header h1 {
+                text-align: center;
+                font-family: 'Domine', serif;
+                font-size: 24px;
+                letter-spacing: 6px;
+                line-height: 80px;
+                margin: 0;
+            }
+
+            header h1 a {
+                color: #222;
+                text-decoration: none;
+            }
+
+            main {
+                max-width: 997px;
+                text-align: center;
+                margin: 90px auto 90px auto;
+            }
+
+            main h2 {
+                font-size: 30px;
+                font-weight: normal;
+                margin: 0;
+            }
+
+            main p {
+                color: #999;
+                font-size: 18px;
+            }
+
+            main .product {
+                margin: 60px 0;
+            }
+
+            main .product .card {
+                width: 290px;
+                height: 335px;
+                display: inline-block;
+                margin: 20px;
+                position: relative;
+            }
+
+            main .product .card img {
+                width: 100%;
+                height: 100%;
+            }
+
+            main .product .card .over {
+                background: rgba(110, 94, 191, 0.9);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                z-index: 9999;
+                transition: all 0.5s ease-in-out;
+            }
+
+            main .product .card:hover .over {
+                opacity: 1;
+            }
+
+            main .product .card .over a {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 2px solid #fff;
+                color: #fff;
+            }
+
+            main .product .card .over a:hover {
+                color: rgb(110, 94, 191);
+                background-color: #fff;
+            }
+
+            main img:hover {
+                padding: 20px;
+                background-color: #ddd;
+            }
+
+            main a {
+                width: 160px;
+                height: 45px;
+                display: block;
+                margin: 0 auto 0 auto;
+                line-height: 45px;
+                text-decoration: none;
+                font-size: 18px;
+                border: 2px solid #ccc;
+                color: #666;
+                transition-duration: .4s;
+            }
+
+            main a:hover {
+                background-color: #222;
+                color: #fff;
+                border-color: #222;
+            }
+
+            footer {
+                background-color: #222;
+                height: 50px;
+                color: #999;
+                text-align: center;
+                line-height: 50px;
+            }    
+        </style>
+        
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="index.html">STORE</a>
+            </h1>
+        </header>
+        <main>
+            <h2>Featured Products</h2>
+            <p>Refresh your look with pieces of our collection</p>
+            
+            <div class="product">
+                <div class="card">
+                    <img src="https://demos.coretabs.net/frontend-basics-workshop/img/img1.jpg">
+                    <div class="over">
+                        <a class="title" href="#show">View Product</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://demos.coretabs.net/frontend-basics-workshop/img/img2.jpg">
+                    <div class="over">
+                        <a class="title" href="#show">View Product</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://demos.coretabs.net/frontend-basics-workshop/img/img3.jpg">
+                    <div class="over">
+                        <a class="title" href="#show">View Product</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://demos.coretabs.net/frontend-basics-workshop/img/img4.jpg">
+                    <div class="over">
+                        <a class="title" href="#show">View product</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://demos.coretabs.net/frontend-basics-workshop/img/img5.jpg">
+                    <div class="over">
+                        <a class="title" href="#show">View Product</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://demos.coretabs.net/frontend-basics-workshop/img/img6.jpg">
+                    <div class="over">
+                        <a class="title" href="#show">View Product</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://demos.coretabs.net/frontend-basics-workshop/img/img7.jpg">
+                    <div class="over">
+                        <a class="title" href="#show">View product</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://demos.coretabs.net/frontend-basics-workshop/img/img8.jpg">
+                    <div class="over">
+                        <a class="title" href="#show">View Product</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://demos.coretabs.net/frontend-basics-workshop/img/img9.jpg">
+                    <div class="over">
+                        <a class="title" href="#show">View Product</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2018 All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
